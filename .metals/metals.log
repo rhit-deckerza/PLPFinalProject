@@ -1,0 +1,319 @@
+2023.05.03 13:50:57 INFO  Started: Metals version 0.11.12 in workspace 'C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject' for client Visual Studio Code 1.77.3.
+May 03, 2023 1:50:57 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 03, 2023 1:50:57 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 03, 2023 1:50:57 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\.metals\metals (H2 2.1)
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.064s)
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+May 03, 2023 1:50:58 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.228s)
+2023.05.03 13:50:58 INFO  time: initialize in 1.52s
+May 03, 2023 1:51:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.05.03 13:51:00 WARN  Build server is not auto-connectable.
+2023.05.03 13:51:00 WARN  no build tool detected in workspace 'C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.03 13:51:00 WARN  no build target for: C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\tutorial.scala
+2023.05.03 13:51:06 INFO  no build target found for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\tutorial.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.03 13:51:11 INFO  time: code lens generation in 10s
+2023.05.03 13:53:00 ERROR text document: file:///c:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/tutorial.scala
+java.nio.file.NoSuchFileException: c:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\tutorial.scala
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.Files.readAllBytes(Files.java:3152)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$2(InteractiveSemanticdbs.scala:90)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:90)
+	at java.util.HashMap.compute(HashMap.java:1197)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2684)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:89)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:63)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1780)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1778)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+May 03, 2023 1:53:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 21
+2023.05.03 13:55:03 INFO  Shutting down server
+2023.05.03 13:55:03 INFO  shutting down Metals
+2023.05.03 13:55:03 INFO  Exiting server
+2023.05.03 13:55:54 INFO  Started: Metals version 0.11.12 in workspace 'C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject' for client Visual Studio Code 1.77.3.
+May 03, 2023 1:55:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 03, 2023 1:55:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 03, 2023 1:55:55 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 03, 2023 1:55:58 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\.metals\metals (H2 2.1)
+May 03, 2023 1:55:58 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.187s)
+May 03, 2023 1:55:58 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 03, 2023 1:55:58 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.03 13:55:59 INFO  time: initialize in 4.26s
+2023.05.03 13:56:01 WARN  Build server is not auto-connectable.
+2023.05.03 13:56:01 WARN  no build target for: C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 13:56:01 WARN  no build tool detected in workspace 'C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.03 13:56:09 INFO  no build target found for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.03 13:56:15 INFO  time: code lens generation in 14s
+2023.05.03 13:56:29 WARN  no build target for: C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\build.sbt
+2023.05.03 13:56:30 WARN  no build target for: C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\build.sbt
+2023.05.03 13:56:34 INFO  running 'C:\Program Files\Java\jdk1.8.0_281\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -Dsbt.version=1.8.2 -jar C:\Users\deckerza\AppData\Local\Temp\metals4178671574509022286\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.05.03 13:56:35 ERROR [info] [launcher] getting org.scala-sbt sbt 1.8.2  (this may take some time)...
+2023.05.03 13:56:58 ERROR [info] [launcher] getting Scala 2.12.17 (for sbt)...
+2023.05.03 13:57:05 INFO  [info] Updated file C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\project\build.properties: set sbt.version to 1.8.2
+2023.05.03 13:57:05 INFO  [info] welcome to sbt 1.8.2 (Oracle Corporation Java 1.8.0_281)
+2023.05.03 13:57:18 INFO  [info] loading settings for project finalproject-build-build from metals.sbt ...
+2023.05.03 13:57:23 INFO  [info] loading project definition from C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\project\project
+2023.05.03 13:57:37 INFO  [info] loading settings for project finalproject-build from metals.sbt ...
+2023.05.03 13:57:37 INFO  [info] loading project definition from C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\project
+2023.05.03 13:57:54 INFO  [success] Generated .bloop\finalproject-build.json
+2023.05.03 13:57:54 INFO  [success] Total time: 17 s, completed May 3, 2023 1:57:55 PM
+2023.05.03 13:57:56 INFO  [info] loading settings for project finalproject from build.sbt ...
+2023.05.03 13:57:56 INFO  [info] set current project to finalproject (in build file:/C:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/)
+2023.05.03 13:57:59 INFO  [success] Generated .bloop\finalproject.json
+2023.05.03 13:57:59 INFO  [success] Generated .bloop\finalproject-test.json
+2023.05.03 13:57:59 INFO  [success] Total time: 1 s, completed May 3, 2023 1:57:59 PM
+2023.05.03 13:57:59 INFO  time: ran 'sbt bloopInstall' in 1m25s
+2023.05.03 13:57:59 INFO  Attempting to connect to the build server...
+2023.05.03 13:57:59 INFO  Setting up current java home C:\Program Files\Java\jdk1.8.0_281 in C:\Users\deckerza\.bloop\bloop.json
+2023.05.03 13:58:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\.metals\bsp.trace.json or C:\Users\deckerza\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.03 13:58:32 INFO  Attempting to connect to the build server...
+2023.05.03 13:58:32 INFO  Bloop uses C:\Program Files\Java\jdk1.8.0_281 defined at C:\Users\deckerza\.bloop\bloop.json
+2023.05.03 13:58:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\project\.metals\bsp.trace.json or C:\Users\deckerza\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.05.03 13:58:32 INFO  time: Connected to build server in 32s
+2023.05.03 13:58:32 INFO  Connected to Build server: Bloop v1.5.6
+2023.05.03 13:58:32 INFO  time: Imported build in 0.34s
+2023.05.03 13:58:42 INFO  time: indexed workspace in 9.25s
+2023.05.03 13:58:50 INFO  time: code lens generation in 7.33s
+2023.05.03 13:58:50 INFO  compiling finalproject (1 scala source)
+2023.05.03 13:59:32 INFO  Deduplicating compilation of finalproject from bsp client 'Metals 0.11.12' (since 1m 4.13s)
+2023.05.03 13:59:32 INFO  compiling finalproject (1 scala source)
+2023.05.03 13:59:48 INFO  time: compiled finalproject in 15s
+2023.05.03 15:09:31 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:09:40 INFO  time: compiled finalproject in 8.65s
+Exception in thread "pool-6-thread-1" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Exception in thread "pool-6-thread-2" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+May 03, 2023 3:10:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69
+2023.05.03 15:10:51 INFO  compiling finalproject (1 scala source)
+May 03, 2023 3:10:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 75
+2023.05.03 15:10:52 INFO  time: compiled finalproject in 1.33s
+2023.05.03 15:10:55 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:10:56 INFO  time: compiled finalproject in 1.11s
+2023.05.03 15:11:41 WARN  Using indexes to guess the definition of isValid
+2023.05.03 15:11:41 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:11:45 INFO  time: compiled finalproject in 3.61s
+2023.05.03 15:11:45 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:11:47 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:11:49 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:34 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:35 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:37 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:37 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:38 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:39 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:40 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:40 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:12:40 INFO  time: compiled finalproject in 0.88s
+2023.05.03 15:12:44 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:44 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:44 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+Exception in thread "pool-6-thread-3" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+2023.05.03 15:12:44 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:44 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:45 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:45 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:12:45 INFO  time: compiled finalproject in 0.74s
+2023.05.03 15:12:48 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:52 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:52 INFO  compiling finalproject (1 scala source)
+May 03, 2023 3:12:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 284
+2023.05.03 15:12:52 INFO  time: compiled finalproject in 0.79s
+2023.05.03 15:12:55 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:55 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:56 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:58 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:58 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:12:59 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:12:59 INFO  time: compiled finalproject in 0.5s
+2023.05.03 15:13:02 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:13:05 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:13:05 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:13:08 INFO  time: compiled finalproject in 3.12s
+2023.05.03 15:13:12 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:13:12 INFO  time: compiled finalproject in 0.44s
+2023.05.03 15:13:15 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:13:15 INFO  time: compiled finalproject in 0.6s
+2023.05.03 15:15:35 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:15:36 INFO  time: compiled finalproject in 1.54s
+2023.05.03 15:15:39 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:15:42 INFO  time: compiled finalproject in 2.8s
+2023.05.03 15:15:53 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:15:55 INFO  time: compiled finalproject in 1.56s
+2023.05.03 15:16:11 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:16:11 INFO  time: compiled finalproject in 0.25s
+May 03, 2023 3:16:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 479
+May 03, 2023 3:16:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 488
+May 03, 2023 3:16:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 498
+May 03, 2023 3:16:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 503
+2023.05.03 15:16:54 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:16:54 INFO  time: compiled finalproject in 0.17s
+May 03, 2023 3:17:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 527
+something's wrong: no file:///C:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/src/main/scala/Main.scala in (Int, <error>)RangePosition(file:///C:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/src/main/scala/Main.scala, 148, 148, 163)
+2023.05.03 15:17:36 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:17:36 INFO  time: compiled finalproject in 0.28s
+May 03, 2023 3:17:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 648
+2023.05.03 15:17:48 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:17:48 INFO  time: compiled finalproject in 0.23s
+2023.05.03 15:20:50 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:20:50 INFO  time: compiled finalproject in 0.3s
+2023.05.03 15:21:10 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:21:10 INFO  time: compiled finalproject in 0.23s
+2023.05.03 15:21:35 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:21:36 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:21:39 INFO  time: compiled finalproject in 2.73s
+2023.05.03 15:21:41 INFO  Deduplicating compilation of finalproject from bsp client 'Metals 0.11.12' (since 1h 23m 13.172s)
+2023.05.03 15:21:43 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:21:45 INFO  time: compiled finalproject in 1.52s
+2023.05.03 15:22:08 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:08 INFO  time: compiled finalproject in 0.23s
+2023.05.03 15:22:09 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:09 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:11 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:12 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:12 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:12 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:12 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:13 WARN  Using indexes to guess the definition of Array
+2023.05.03 15:22:14 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:14 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:15 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:15 INFO  time: compiled finalproject in 0.17s
+2023.05.03 15:22:17 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+May 03, 2023 3:22:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 896
+2023.05.03 15:22:17 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:17 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:17 INFO  time: compiled finalproject in 0.2s
+2023.05.03 15:22:20 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:21 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:21 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:22 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:22 INFO  time: compiled finalproject in 0.35s
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:24 WARN  Using indexes to guess the definition of Int
+2023.05.03 15:22:25 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:25 INFO  time: compiled finalproject in 0.2s
+2023.05.03 15:22:25 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:27 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:27 INFO  time: compiled finalproject in 0.14s
+2023.05.03 15:22:27 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:28 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:29 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:22:29 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:22:29 INFO  time: compiled finalproject in 0.98s
+something's wrong: no file:///C:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/src/main/scala/Main.scala in Array[Array[Int]]RangePosition(file:///C:/Users/deckerza/Desktop/Rose-Hulman/Junior_Year/Spring/CSSE403/FinalProject/src/main/scala/Main.scala, 174, 174, 191)
+2023.05.03 15:23:08 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:23:10 INFO  time: compiled finalproject in 2.11s
+2023.05.03 15:23:14 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:15 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:23:17 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:18 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:18 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:18 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:21 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:21 WARN  Could not load snapshot text for C:\Users\deckerza\Desktop\Rose-Hulman\Junior_Year\Spring\CSSE403\FinalProject\src\main\scala\Main.scala
+2023.05.03 15:23:21 INFO  time: compiled finalproject in 6.83s
+May 03, 2023 3:23:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1059
+2023.05.03 15:23:26 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:23:30 INFO  time: compiled finalproject in 3.49s
+2023.05.03 15:32:06 INFO  compiling finalproject (1 scala source)
+2023.05.03 15:32:08 INFO  time: compiled finalproject in 1.56s
+May 03, 2023 4:37:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.05.03 16:38:03 INFO  Shutting down server
+2023.05.03 16:38:03 INFO  shutting down Metals
+2023.05.03 16:38:03 INFO  Exiting server
